@@ -1,0 +1,12 @@
+browser: "chrome"
+logging_level: "INFO"
+browser_preferences:
+  headless: false
+  window_size: 
+    width: 1920
+    height: 1080
+  default_url: "http://localhost"
+commands:
+  track: "Start tracking user actions"
+  play: "Replay recorded actions"
+  stop: "Stop tracking user actions"
