@@ -1,10 +1,24 @@
+import pyautogui
+import keyboard
+import logging
+import os
+
+def setup_logging():
+    # Ensure logs directory exists
+    os.makedirs('logs', exist_ok=True)
+    logging.basicConfig(
+        filename='logs/automation.log',
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s'
+    )
+
 def start_recording():
-    import pyautogui
-    import keyboard
-    import logging
-
-    logging.basicConfig(filename='logs/automation.log', level=logging.INFO)
-
+    """
+    Records keyboard actions until 'esc' is pressed.
+    Returns:
+        actions (list): List of recorded key names.
+    """
+    setup_logging()
     actions = []
 
     def record_action(event):
@@ -20,6 +34,12 @@ def start_recording():
     return actions
 
 def save_actions_to_file(actions, filename='actions.txt'):
+    """
+    Saves recorded actions to a text file.
+    Args:
+        actions (list): List of recorded key names.
+        filename (str): File to save actions.
+    """
     with open(filename, 'w') as f:
         for action in actions:
             f.write(f"{action}\n")
