@@ -1,2 +1,3 @@
-# python
-this project is completly learning with chatgpt or online stuff websites no youtube video 
+
+🐍 Python fundamentals
+Loops, conditions, functions, data types
