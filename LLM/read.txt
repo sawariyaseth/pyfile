@@ -1,2 +1,0 @@
-👉 “How do you call an LLM API?”
-👉 Prompt + response handling
