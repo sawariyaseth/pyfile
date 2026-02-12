@@ -1,6 +1,6 @@
 this project is going to implement ai api to a game. 
 
-You can run the /temp_run.py/ file, which already calls the /ai_decision function/ and prints the result. Here's the relevant code:
+You can run the temp_run.py/ file, which already calls the ai_decision function/ and prints the result. Here's the relevant code:
 
 You can run this script in the terminal usin
 
